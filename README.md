@@ -75,8 +75,8 @@ Uvicorn running on http://127.0.0.1:8000
   /search/substring  
   /search/fulltext  
   /search/fuzzy  
-
-Example Searches
+Click Try It Out and perform the searches  
+Example Searches  
 In Swagger UI, try:  
 1.Prefix search → type Para → returns Paracetamol.  
 2.Substring search → type Injection → returns all injections.  
