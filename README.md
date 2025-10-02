@@ -55,43 +55,27 @@ If successful, you’ll see:
 Uvicorn running on http://127.0.0.1:8000
 
 ### Step 5: Open Swagger UI
-Open your browser.
-Go to: http://127.0.0.1:8000/docs
-You’ll see an interface with:
-/search/prefix
-/search/substring
-/search/fulltext
-/search/fuzzy
+1.Open your browser.
+2.Go to: http://127.0.0.1:8000/docs
+3.You’ll see an interface with:
+  /search/prefix
+  /search/substring
+  /search/fulltext
+  /search/fuzzy
 
 Example Searches
 In Swagger UI, try:
-Prefix search → type Para → returns Paracetamol.
-Substring search → type Injection → returns all injections.
-Full-text search → type antibiotic → returns antibiotic medicines.
-Fuzzy search → type Avastn → still returns Avastin.
+1.Prefix search → type Para → returns Paracetamol.
+2.Substring search → type Injection → returns all injections.
+3.Full-text search → type antibiotic → returns antibiotic medicines.
+4.Fuzzy search → type Avastn → still returns Avastin.
 
 How It Works (Performance Notes)
-Prefix Search → B-tree index, fast ILIKE 'Para%'.
-Substring Search → pg_trgm trigram index, efficient for ILIKE '%Injection%'.
-Full-text Search → to_tsvector + GIN index, ignores accents, allows natural queries.
-Fuzzy Search → trigram similarity, tolerates typos.
-VACUUM ANALYZE keeps indexes updated for performance.
+1.Prefix Search → B-tree index, fast ILIKE 'Para%'.
+2.Substring Search → pg_trgm trigram index, efficient for ILIKE '%Injection%'.
+3.Full-text Search → to_tsvector + GIN index, ignores accents, allows natural queries.
+4.Fuzzy Search → trigram similarity, tolerates typos.
+5.VACUUM ANALYZE keeps indexes updated for performance.
 
-pharmacy-search/
-│
-├── app/              # API logic
-│   ├── crud.py       # Query functions
-│   ├── models.py     # Data models
-│   ├── database.py   # DB connection
-│   ├── main.py       # FastAPI app
-│
-├── data/             # JSON dataset chunks (~280k rows)
-├── schema.sql        # DB schema + indexes
-├── import_data.py    # Data import script
-├── run_benchmark.py  # Benchmark runner
-├── submission.json   # Output queries
-├── bench_stats.json  # Latency report
-├── benchmark.md      # Benchmark documentation
-└── README.md         # Run instructions (this file)
 
 
