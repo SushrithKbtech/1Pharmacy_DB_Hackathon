@@ -48,7 +48,7 @@ Done Import.
 Now your DB has all medicines loaded.
 
 ### Step 4: Run the API Server
-Start the FastAPI server (in VS Code terminal):
+Start the FastAPI server (in VS Code terminal):  
 uvicorn main:app --reload
 
 If successful, you’ll see:
