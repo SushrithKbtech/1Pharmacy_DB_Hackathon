@@ -1,0 +1,42 @@
+{
+  "count": 6,
+  "latency_ms": {
+    "min": 0.16940000023168977,
+    "p50": 0.5606500001249515,
+    "avg": 29.902783333379073,
+    "p90": 106.48852000003899,
+    "max": 176.77039999989574
+  },
+  "samples": [
+    {
+      "type": "prefix",
+      "q": "boc",
+      "latency_ms": 0.7692000003771682
+    },
+    {
+      "type": "prefix",
+      "q": "Unic",
+      "latency_ms": 0.35209999987273477
+    },
+    {
+      "type": "prefix",
+      "q": "Carb",
+      "latency_ms": 1.0657000002538553
+    },
+    {
+      "type": "substring",
+      "q": "Leekuf",
+      "latency_ms": 0.2898999996432394
+    },
+    {
+      "type": "fuzzy",
+      "q": "daxid",
+      "latency_ms": 176.77039999989574
+    },
+    {
+      "type": "fulltext",
+      "q": "cancer",
+      "latency_ms": 0.16940000023168977
+    }
+  ]
+}
