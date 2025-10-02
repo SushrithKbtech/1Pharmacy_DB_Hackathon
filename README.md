@@ -15,7 +15,7 @@ Overview
 pip install -r requirements.txt
 (or manually: pip install fastapi uvicorn psycopg2-binary)
 
-Step 2: Setup PostgreSQL Database
+### Step 2: Setup PostgreSQL Database
 Open psql (PostgreSQL shell).
 Run this in your terminal:
 psql -U postgres
@@ -29,7 +29,7 @@ Load the schema (tables + indexes):
 
 At this point, your database is ready but empty.
 
-Step 3: Import the Dataset
+### Step 3: Import the Dataset
 Back in VS Code terminal, run:
 python import_data.py
 
@@ -41,14 +41,14 @@ Done Import.
 
 Now your DB has all medicines loaded.
 
-Step 4: Run the API Server
+### Step 4: Run the API Server
 Start the FastAPI server (in VS Code terminal):
 uvicorn main:app --reload
 
 If successful, you’ll see:
 Uvicorn running on http://127.0.0.1:8000
 
-Step 5: Open Swagger UI
+### Step 5: Open Swagger UI
 Open your browser.
 Go to: http://127.0.0.1:8000/docs
 You’ll see an interface with:
