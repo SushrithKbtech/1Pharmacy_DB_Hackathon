@@ -42,7 +42,14 @@ Load the schema (tables + indexes):
 At this point, your database is ready but empty.  
   
 ### Step 3: Import the Dataset
-Back in VS Code terminal, run:  
+Back in VS Code terminal,  
+First, set your database connection string:  
+For Windows:  
+$env:DB_DSN = "dbname=pharmacy user=postgres password=yourpassword host=localhost port=5432"  
+For Mac:  
+export DB_DSN="dbname=pharmacy user=postgres password=yourpassword host=localhost port=5432"  
+  
+Then run:  
 python import_data.py  
   
 This will read JSON files from the data/ folder.  
