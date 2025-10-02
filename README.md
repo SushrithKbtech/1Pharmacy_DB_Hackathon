@@ -24,7 +24,7 @@ pip install -r requirements.txt
 ### Step 2: Setup PostgreSQL Database  
 Open psql (PostgreSQL shell).    
 Server [localhost]:Press Enter  
-Database [your_username]: pharmacy  
+Database [your_username]: postgres    
 Port [5432]:Press Enter  
 Username [your_windows_user]: postgres  
 Password: what you have set during installation  
