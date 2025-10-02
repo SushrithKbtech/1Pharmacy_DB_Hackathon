@@ -11,7 +11,7 @@ Overview
 ## Setup Instructions
 
 ### 1. Install Dependencies
-```bash
+install in python venv in your ide
 pip install -r requirements.txt
 (or manually: pip install fastapi uvicorn psycopg2-binary)
 
