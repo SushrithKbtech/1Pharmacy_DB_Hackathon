@@ -37,7 +37,7 @@ CREATE DATABASE pharmacy;
 \c pharmacy  
   
 Load the schema (tables + indexes):  
-\i schema.sql  
+\i 'path/to/your/schema.sql'  
   
 At this point, your database is ready but empty.  
   
