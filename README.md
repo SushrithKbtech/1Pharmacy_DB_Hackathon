@@ -29,7 +29,7 @@ Port [5432]:Press Enter
 Username [your_windows_user]: postgres  
 Password: what you have set during installation  
   
-Run this in your terminal:  
+Or Run this in your terminal:  
 psql -U postgres  
   
 Inside psql, create the database:  
