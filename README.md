@@ -1,4 +1,4 @@
-Overview
+### Overview
 - A search API over ~280k medicine records.  
 - Built with **FastAPI + PostgreSQL**.  
 - Supports 4 types of queries:
