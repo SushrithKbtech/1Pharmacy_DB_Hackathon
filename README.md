@@ -8,9 +8,15 @@ Overview
   4. **Fuzzy search** – typo-tolerant queries.  
 - Optimized for **speed and accuracy** using indexes and extensions.
 
+## Prerequisites
+Make sure these are installed:
+1. **Python 3.10+**
+2. **PostgreSQL (v14 or later)**
+3. **VS Code or any IDE**
+
 ## Setup Instructions
 
-### 1. Install Dependencies
+### Step 1. Install Dependencies
 install in python venv in your ide
 pip install -r requirements.txt
 (or manually: pip install fastapi uvicorn psycopg2-binary)
